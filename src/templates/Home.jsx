@@ -1,7 +1,9 @@
+import { Heading } from '../components/Heading';
+
 function Home() {
   return (
     <div>
-      <h1>Oi</h1>
+      <Heading>O Texto que eu quero</Heading>
     </div>
   );
 }
