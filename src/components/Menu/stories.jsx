@@ -1,4 +1,4 @@
-import Menu from '.';
+import { Menu } from '.';
 import linksMock from '../NavLinks/mock';
 
 export default {
