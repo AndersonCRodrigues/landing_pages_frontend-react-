@@ -85,4 +85,10 @@ describe('<Heading />', () => {
       media: theme.media.lteMedium,
     });
   });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading size="huge">texto</Heading>);
+
+    expect(container).toMatchSnapshot();
+  });
 });
