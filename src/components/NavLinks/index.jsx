@@ -1,8 +1,8 @@
 import * as Styled from './styles';
 import P from 'prop-types';
-import MenuLink from '../MenuLink';
+import { MenuLink } from '../MenuLink';
 
-export default function NavLinks({ links = [] }) {
+export const NavLinks = ({ links = [] }) => {
   return (
     <Styled.Container>
       {links.map((link) => (
@@ -10,7 +10,7 @@ export default function NavLinks({ links = [] }) {
       ))}
     </Styled.Container>
   );
-}
+};
 
 NavLinks.propTypes = {
   links: P.arrayOf(

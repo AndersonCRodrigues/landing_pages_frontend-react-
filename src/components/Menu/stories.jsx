@@ -1,4 +1,5 @@
 import { Menu } from '.';
+
 import linksMock from '../NavLinks/mock';
 
 export default {
@@ -14,10 +15,10 @@ export default {
   },
 };
 
-export const Templates = (args) => {
+export const Template = (args) => {
   return (
-    <div>
-      <Menu {...args} />;
+    <div style={{ height: '300vh', background: 'gray' }}>
+      <Menu {...args} />
     </div>
   );
 };

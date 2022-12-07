@@ -1,4 +1,4 @@
-import NavLinks from '.';
+import { NavLinks } from '.';
 import links from './mock';
 
 export default {

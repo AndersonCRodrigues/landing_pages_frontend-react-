@@ -12,9 +12,9 @@ export const Container = styled.div`
     position: fixed;
     z-index: 5;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
     border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
@@ -25,23 +25,23 @@ export const Container = styled.div`
     }
 
     & ${Heading} {
-      marging-top: 0;
-      marging-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     @media ${theme.media.lteMedium} {
       height: 100vh;
-      visbility: hidden;
+      visibility: hidden;
       opacity: 0;
-      ${visible && menuVisible()}
+      ${visible && menuVisible(theme)}
 
       > ${SectionContainer} {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      height: 100vh;
-      align-items: center;
-      overflow-y: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        align-items: center;
+        overflow-y: auto;
       }
 
       & ${Heading} {
@@ -74,7 +74,7 @@ export const Button = styled.button`
     top: 2rem;
     right: 2rem;
     width: 4rem;
-    heigth: 4rem;
+    height: 4rem;
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
     border: none;
@@ -83,13 +83,13 @@ export const Button = styled.button`
 
     @media ${theme.media.lteMedium} {
       display: flex;
-      text-align: center;
+      align-items: center;
       justify-content: center;
     }
 
-  > svg {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   `}
 `;

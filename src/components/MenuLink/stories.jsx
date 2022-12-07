@@ -1,8 +1,8 @@
-import MenuLinik from '.';
+import { MenuLink } from '.';
 
 export default {
-  title: 'MenuLinik',
-  component: MenuLinik,
+  title: 'MenuLink',
+  component: MenuLink,
   args: {
     children: `Link`,
     link: 'https://www.google.com.br/',
@@ -15,7 +15,7 @@ export default {
 export const Templates = (args) => {
   return (
     <div style={{ display: 'flex' }}>
-      <MenuLinik {...args} />;
+      <MenuLink {...args} />;
     </div>
   );
 };

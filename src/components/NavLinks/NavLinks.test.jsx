@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import NavLinks from '.';
+import { NavLinks } from '.';
 import { renderTheme } from '../../styles/render-theme';
 import { theme } from '../../styles/theme';
 import mock from './mock';
