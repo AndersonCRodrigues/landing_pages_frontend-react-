@@ -17,15 +17,11 @@ describe('map-data', () => {
         footer_text: '<p>Hey</p>',
         slug: 'slug',
         title: 'title',
-        section: [1, 2, 3, 4],
-        menu: { a: 'b' },
       },
     ])[0];
 
     expect(pagesData.footerHtml).toBe('<p>Hey</p>');
     expect(pagesData.slug).toBe('slug');
     expect(pagesData.title).toBe('title');
-    expect(pagesData.section).toEqual([1, 2, 3, 4]);
-    expect(pagesData.menu).toEqual({ a: 'b' });
   });
 });
