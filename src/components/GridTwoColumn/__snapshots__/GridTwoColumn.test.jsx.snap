@@ -82,7 +82,7 @@ exports[`<GridTwoColumn /> should render 1`] = `
           >
             Grid two column
           </h2>
-          <p
+          <div
             class="c6"
           >
             
@@ -90,7 +90,7 @@ exports[`<GridTwoColumn /> should render 1`] = `
     Cumque fugit distinctio voluptates, sapiente saepe eveniet tempore sed ab,
     similique autem doloremque incidunt sit deleniti architecto?
     Illum laudantium commodi aut saepe.
-          </p>
+          </div>
         </div>
         <div
           class=""

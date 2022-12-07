@@ -86,11 +86,11 @@ exports[`<GridText /> should render 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -102,11 +102,11 @@ exports[`<GridText /> should render 1`] = `
             >
               teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -116,11 +116,11 @@ exports[`<GridText /> should render 1`] = `
             >
               teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -130,11 +130,11 @@ exports[`<GridText /> should render 1`] = `
             >
               teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -229,11 +229,11 @@ exports[`<GridText /> should render without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -245,11 +245,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -259,11 +259,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -273,11 +273,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
+            </div>
           </div>
         </div>
       </div>

@@ -6,10 +6,10 @@ exports[`<TextCompornent /> should match snapshot 1`] = `
 }
 
 <div>
-  <p
+  <div
     class="c0"
   >
     texto
-  </p>
+  </div>
 </div>
 `;
