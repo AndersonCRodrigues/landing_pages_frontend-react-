@@ -1,11 +1,8 @@
-import { Heading } from '../../components/Heading';
+import { Base } from '../Base';
+import { mockBase } from '../Base/stories';
 
 function Home() {
-  return (
-    <div>
-      <Heading>O Texto que eu quero</Heading>
-    </div>
-  );
+  return <Base {...mockBase} />;
 }
 
 export default Home;
