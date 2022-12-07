@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import TextComponent from '.';
+import { TextComponent } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
 describe('<TextCompornent />', () => {
