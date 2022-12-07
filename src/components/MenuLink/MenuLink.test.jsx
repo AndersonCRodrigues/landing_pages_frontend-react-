@@ -26,7 +26,9 @@ describe('<MenuLink />', () => {
   });
 
   it('should match snapshot', () => {
-    const { container } = renderTheme(<MenuLink>link</MenuLink>);
+    const { container } = renderTheme(
+      <MenuLink link="http://localhost">link</MenuLink>,
+    );
 
     expect(container).toMatchSnapshot();
   });

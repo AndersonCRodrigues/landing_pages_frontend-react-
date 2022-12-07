@@ -31,6 +31,7 @@ exports[`<MenuLink /> should match snapshot 1`] = `
 <div>
   <a
     class="c0"
+    href="http://localhost"
     target="_self"
   >
     link
