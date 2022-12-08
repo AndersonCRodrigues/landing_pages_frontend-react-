@@ -4,7 +4,7 @@ import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
 
 import { mapData } from '../../api/map-data';
-// import dataMock from '../../api/apiMock.json';
+import dataMock from '../../api/apiMock.json';
 
 import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
@@ -16,7 +16,7 @@ export const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const load = async () => {
+    /*  const load = async () => {
       try {
         const endPoint =
           'http://localhost:1337/api/pages/?filters[slug]=landing-page&populate=deep';
@@ -24,19 +24,17 @@ export const Home = () => {
         const json = await data.json();
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
-        console.log(attributes);
-        console.log(pageData);
         setData(pageData[0]);
       } catch (e) {
         console.log('deu ruim');
         setData(undefined);
       }
     };
-    load();
-    /* const { attributes } = dataMock.data[0];
+    load(); */
+    const { attributes } = dataMock.data[0];
     const pageData = mapData([attributes]);
     console.log(pageData[0]);
-    setData(() => pageData[0]); */
+    setData(() => pageData[0]);
   }, []);
 
   if (data === undefined) {
