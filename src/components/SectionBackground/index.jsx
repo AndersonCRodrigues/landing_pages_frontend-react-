@@ -3,7 +3,7 @@ import P from 'prop-types';
 import { SectionContainer } from '../SectionContainer';
 
 const randon = () =>
-  `id-${Math.random() * 10000}`.replace(/[â-z0-9-__]/gi, '-');
+  `id-${Math.random() * 10000}`.replace(/[^a-z0-9-__]/gi, '-');
 
 export const SectionBackground = ({
   children,
