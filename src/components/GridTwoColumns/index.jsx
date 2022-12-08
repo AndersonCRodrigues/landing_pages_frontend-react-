@@ -4,12 +4,23 @@ import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
-export const GridTwoColumns = ({ title, text, srcImg, background = false }) => {
+export const GridTwoColumns = ({
+  title,
+  text,
+  srcImg,
+  background = false,
+  sectionId = '',
+}) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
         <Styled.TextContainer>
-          <Heading upperCase colorDark={!background} as="h2">
+          <Heading
+            upperCase
+            colorDark={!background}
+            as="h2"
+            sectionId={sectionId}
+          >
             {title}
           </Heading>
           <TextComponent>{text}</TextComponent>
@@ -28,4 +39,5 @@ GridTwoColumns.propTypes = {
   text: P.string.isRequired,
   srcImg: P.string.isRequired,
   background: P.bool,
+  sectionId: P.string,
 };

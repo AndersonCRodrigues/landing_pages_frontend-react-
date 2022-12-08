@@ -4,11 +4,23 @@ import { SectionBackground } from '../SectionBackground';
 import { TextComponent } from '../TextComponent';
 import * as Styled from './styles';
 
-export const GridText = ({ title, description, grid, background = false }) => {
+export const GridText = ({
+  title,
+  description,
+  grid,
+  background = false,
+  sectionId = '',
+}) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
-        <Heading size="huge" upperCase colorDark={!background} as="h2">
+        <Heading
+          size="huge"
+          upperCase
+          colorDark={!background}
+          as="h2"
+          sectionId={sectionId}
+        >
           {title}
         </Heading>
         <TextComponent>{description}</TextComponent>
@@ -37,4 +49,5 @@ GridText.propTypes = {
     }),
   ).isRequired,
   background: P.bool,
+  sectionId: P.string,
 };
