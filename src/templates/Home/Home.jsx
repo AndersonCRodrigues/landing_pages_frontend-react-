@@ -1,9 +1,10 @@
-import { GridTwoColumn } from '../../api/components/GridTwoColumn';
-import { GridContent } from '../../api/components/GridContent';
-import { GridText } from '../../api/components/GridText';
-import { GridImage } from '../../api/components/GridImage';
+import { GridTwoColumns } from '../../components/GridTwoColumns';
+import { GridContent } from '../../components/GridContent';
+import { GridText } from '../../components/GridText';
+import { GridImage } from '../../components/GridImage';
 
 import { mapData } from '../../api/map-data';
+// import dataMock from '../../api/apiMock.json';
 
 import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
@@ -23,6 +24,8 @@ export const Home = () => {
         const json = await data.json();
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
+        console.log(attributes);
+        console.log(pageData);
         setData(pageData[0]);
       } catch (e) {
         console.log('deu ruim');
@@ -30,6 +33,10 @@ export const Home = () => {
       }
     };
     load();
+    /* const { attributes } = dataMock.data[0];
+    const pageData = mapData([attributes]);
+    console.log(pageData[0]);
+    setData(() => pageData[0]); */
   }, []);
 
   if (data === undefined) {
@@ -47,17 +54,17 @@ export const Home = () => {
     <Base
       links={links}
       footerHtml={footerHtml}
-      logoData={{ link, text, srcImg }}
+      logoData={{ text, link, srcImg }}
     >
       {sections.map((section, index) => {
         const { component } = section;
         const key = `${slug}-${index}`;
 
         if (component === 'section.section-two-columns') {
-          return <GridTwoColumn key={key} {...section} />;
+          return <GridTwoColumns key={key} {...section} />;
         }
 
-        if (component === 'section.section-conten') {
+        if (component === 'section.section-content') {
           return <GridContent key={key} {...section} />;
         }
 

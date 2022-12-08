@@ -55,7 +55,7 @@ describe('map-sections', () => {
     expect(data.title).toBe('');
   });
 
-  it('should map section tow columns with data', () => {
+  it('should map section two columns with data', () => {
     const data = mapSectionTwoColumns(mapSection2ColMock);
 
     expect(data.background).toBe(true);

@@ -7,7 +7,7 @@ export const mapData = (pagesData = [{}]) => {
       footer_text: footerHtml = '',
       slug = '',
       title = '',
-      section = [],
+      sections = [],
       menu = {},
     } = data;
 
@@ -15,7 +15,7 @@ export const mapData = (pagesData = [{}]) => {
       footerHtml,
       slug,
       title,
-      section: mapSections(section),
+      sections: mapSections(sections),
       menu: mapMenu(menu),
     };
   });

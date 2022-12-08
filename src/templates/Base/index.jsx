@@ -1,8 +1,8 @@
 import P from 'prop-types';
 import * as Styled from './styles';
-import { Menu } from '../../api/components/Menu';
-import { Footer } from '../../api/components/Footer';
-import { GoTop } from '../../api/components/GoTop';
+import { Menu } from '../../components/Menu';
+import { Footer } from '../../components/Footer';
+import { GoTop } from '../../components/GoTop';
 
 export const Base = ({ links, logoData, footerHtml, children }) => {
   return (
