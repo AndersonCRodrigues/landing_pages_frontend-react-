@@ -7,7 +7,6 @@ const rotate = () => keyframes`
 
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-
   }
 `;
 
@@ -31,6 +30,7 @@ export const Container = styled.div`
       border-color: transparent;
       border-style: solid;
       border-radius: 50%;
+    }
 
       &:after {
         width: 6rem;
@@ -47,6 +47,5 @@ export const Container = styled.div`
         border-top: 0.5rem solid ${theme.colors.secondaryColor};
         animation: ${rotate()} 600ms linear reverse infinite;
       }
-    }
   `}
 `;
