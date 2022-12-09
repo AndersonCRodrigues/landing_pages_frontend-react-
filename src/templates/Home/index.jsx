@@ -13,18 +13,20 @@ import { Loading } from '../Loading';
 import { useEffect, useState } from 'react';
 // import { useLocation } from 'react-router-dom';
 
+import config from '../../config';
+
 export const Home = () => {
   const [data, setData] = useState([]);
   // const location = useLocation;
 
   useEffect(() => {
     /* const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
-    const slug = pathname ? pathname : 'landing-page';
+    const slug = pathname ? pathname : config.defaultSlug;
 
      const load = async () => {
       try {
         const endPoint =
-          `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`;
+          `${config.url}{slug}&populate=deep`;
         const data = await fetch(endPoint);
         const json = await data.json();
         const { attributes } = json.data[0];
@@ -41,6 +43,20 @@ export const Home = () => {
     console.log(pageData[0]);
     setData(() => pageData[0]);
   }, []);
+
+  useEffect(() => {
+    if (data === undefined) {
+      document.title = `Página não encontrada | ${config.siteName}`;
+    }
+
+    if (data && !data.slug) {
+      document.title = `Carregando... | ${config.siteName}`;
+    }
+
+    if (data && !data.title) {
+      document.title = `${data.title} | ${config.siteName}`;
+    }
+  }, [data]);
 
   if (data === undefined) {
     return <PageNotFound />;
