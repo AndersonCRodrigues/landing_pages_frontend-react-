@@ -51,7 +51,7 @@ exports[`<GridContent /> should render grid content 1`] = `
 <div>
   <div
     class="c0"
-    id="id-853-3684489187499"
+    id=""
   >
     <div
       class="c1"
@@ -223,7 +223,7 @@ exports[`<GridContent /> should render grid content 2`] = `
 <div>
   <div
     class="c0"
-    id="id-5419-926603227461"
+    id=""
   >
     <div
       class="c1"

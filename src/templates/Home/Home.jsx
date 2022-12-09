@@ -11,17 +11,17 @@ import { PageNotFound } from '../PageNotFound';
 import { Loading } from '../Loading';
 
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 export const Home = () => {
   const [data, setData] = useState([]);
-  const location = useLocation;
+  // const location = useLocation;
 
   useEffect(() => {
-    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    /* const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
     const slug = pathname ? pathname : 'landing-page';
 
-    /*  const load = async () => {
+     const load = async () => {
       try {
         const endPoint =
           `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`;
