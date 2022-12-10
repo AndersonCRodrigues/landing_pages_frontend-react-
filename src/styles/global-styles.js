@@ -38,7 +38,16 @@ export const GlobalStyles = createGlobalStyle`
   table {
     margin-top: 20px;
     border: 1px solid ${({ theme }) => theme.colors.white};
+    border-collapse: collapse;
     width: 100%;
     overflow: auto;
+  }
+
+  caption {
+    text-align: left;
+  }
+
+  td, th {
+    border: 0.1rem solid ${({ theme }) => theme.colors.white};
   }
 `;
