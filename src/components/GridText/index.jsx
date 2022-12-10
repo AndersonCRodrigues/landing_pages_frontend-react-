@@ -12,7 +12,7 @@ export const GridText = ({
   sectionId = '',
 }) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
         <Heading
           size="huge"
