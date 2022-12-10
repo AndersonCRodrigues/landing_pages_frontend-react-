@@ -4,7 +4,7 @@ import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
 
 import { mapData } from '../../api/map-data';
-import dataMock from '../../api/apiMock.json';
+// import dataMock from '../../api/apiMock.json';
 
 import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
@@ -20,13 +20,12 @@ export const Home = () => {
   // const location = useLocation;
 
   useEffect(() => {
-    /* const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
     const slug = pathname ? pathname : config.defaultSlug;
 
-     const load = async () => {
+    const load = async () => {
       try {
-        const endPoint =
-          `${config.url}{slug}&populate=deep`;
+        const endPoint = `${config.url}${slug}&populate=deep`;
         const data = await fetch(endPoint);
         const json = await data.json();
         const { attributes } = json.data[0];
@@ -37,11 +36,7 @@ export const Home = () => {
         setData(undefined);
       }
     };
-    load(); */
-    const { attributes } = dataMock.data[0];
-    const pageData = mapData([attributes]);
-    console.log(pageData[0]);
-    setData(() => pageData[0]);
+    load();
   }, []);
 
   useEffect(() => {
@@ -53,7 +48,7 @@ export const Home = () => {
       document.title = `Carregando... | ${config.siteName}`;
     }
 
-    if (data && !data.title) {
+    if (data && data.title) {
       document.title = `${data.title} | ${config.siteName}`;
     }
   }, [data]);
