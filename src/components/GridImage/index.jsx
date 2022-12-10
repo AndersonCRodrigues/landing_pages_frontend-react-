@@ -14,19 +14,13 @@ export const GridImage = ({
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
-        <Heading
-          size="huge"
-          upperCase
-          colorDark={!background}
-          as="h2"
-          sectionId={sectionId}
-        >
+        <Heading size="huge" upperCase colorDark={!background} as="h2">
           {title}
         </Heading>
         <TextComponent>{description}</TextComponent>
         <Styled.Grid>
-          {grid.map((el) => (
-            <Styled.GridElement key={`${el.srcImg}${el.altText}`}>
+          {grid.map((el, index) => (
+            <Styled.GridElement key={`${index}`}>
               <Styled.Image src={el.srcImg} alt={el.altText} />
             </Styled.GridElement>
           ))}

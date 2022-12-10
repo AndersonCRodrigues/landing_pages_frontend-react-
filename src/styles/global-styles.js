@@ -35,7 +35,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.secondaryColor};
   }
 
-  .table {
+  table {
+    margin-top: 20px;
+    border: 1px solid ${({ theme }) => theme.colors.white};
     width: 100%;
     overflow: auto;
   }
